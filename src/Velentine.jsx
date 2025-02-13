@@ -26,7 +26,6 @@ import confettiSound from "./assets/confetti.mp3";
 import pop from "./assets/pop.mp3";
 
 export default function Valentine() {
-
   // currently playing sound
   const [sound, setSound] = useState(false);
 
@@ -170,14 +169,7 @@ export default function Valentine() {
             </div>
             {!theySaidYes ? (
               <h1 className="font-boogaloo text-2xl lg:text-5xl text-center italic text-[#BD1E91]">
-                {name ? (
-                  <h1>
-                    <span className="capitalize">Mon Bebe</span>, will you be my
-                    Valentine?
-                  </h1>
-                ) : (
-                  <h1>Will you be my Valentine?</h1>
-                )}
+                <h1>Mon Bebe, Will you be my Valentine?</h1>
               </h1>
             ) : (
               <h2 className="font-boogaloo text-2xl lg:text-5xl text-center italic text-[#BD1E91]">
@@ -200,7 +192,9 @@ export default function Valentine() {
                 className={`bg-[#22C55E] heartbeat font-semibold  text-white px-4 py-2 rounded-lg transition-all`}
                 style={{ fontSize: noCount < 1 ? "30px" : `${noCount * 30}px` }}
               >
-                <a href="https://open.spotify.com/playlist/3zSKtPA5uAuJpzVHpbfveN?si=2cYibAKySTWGPe0p_G7gUw&pi=Ywq7q6XtTQeUi">yes</a>
+                <a href="https://open.spotify.com/playlist/3zSKtPA5uAuJpzVHpbfveN?si=2cYibAKySTWGPe0p_G7gUw&pi=Ywq7q6XtTQeUi">
+                  yes
+                </a>
               </button>
               <div
                 onMouseOver={handleRandomLocation}
