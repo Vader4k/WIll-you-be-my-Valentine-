@@ -26,7 +26,6 @@ import confettiSound from "./assets/confetti.mp3";
 import pop from "./assets/pop.mp3";
 
 export default function Valentine() {
-  const { name } = useParams();
 
   // currently playing sound
   const [sound, setSound] = useState(false);
@@ -173,7 +172,7 @@ export default function Valentine() {
               <h1 className="font-boogaloo text-2xl lg:text-5xl text-center italic text-[#BD1E91]">
                 {name ? (
                   <h1>
-                    <span className="capitalize">{name}</span>, will you be my
+                    <span className="capitalize">Mon Bebe</span>, will you be my
                     Valentine?
                   </h1>
                 ) : (
