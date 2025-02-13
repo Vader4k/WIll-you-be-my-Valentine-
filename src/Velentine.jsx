@@ -6,7 +6,6 @@ import { Howl } from "howler";
 
 import confetti from "canvas-confetti";
 
-import { useParams } from "react-router-dom";
 
 //cat images
 import cat1 from "./assets/cat-9.gif";
@@ -169,7 +168,7 @@ export default function Valentine() {
             </div>
             {!theySaidYes ? (
               <h1 className="font-boogaloo text-2xl lg:text-5xl text-center italic text-[#BD1E91]">
-                <h1>Mon Bebe, Will you be my Valentine?</h1>
+                <h1>Bebita, Will you be my Valentine?</h1>
               </h1>
             ) : (
               <h2 className="font-boogaloo text-2xl lg:text-5xl text-center italic text-[#BD1E91]">
@@ -192,7 +191,7 @@ export default function Valentine() {
                 className={`bg-[#22C55E] heartbeat font-semibold  text-white px-4 py-2 rounded-lg transition-all`}
                 style={{ fontSize: noCount < 1 ? "30px" : `${noCount * 30}px` }}
               >
-                <a href="https://open.spotify.com/playlist/3zSKtPA5uAuJpzVHpbfveN?si=2cYibAKySTWGPe0p_G7gUw&pi=Ywq7q6XtTQeUi">
+                <a href="https://open.spotify.com/playlist/6UDdJVHLWC930iFAlzPAO8?si=D82vNZvcRM-CIp078w4zmA">
                   yes
                 </a>
               </button>
